@@ -1,1 +1,24 @@
-<p>form works!</p>
+<div class="my-form mt-5 ml-5 p-5">
+  <div class="form-group">
+    <label for="exampleInputEmail1">person</label>
+    <input type="email" class="form-control" [(ngModel)]="person">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Author</label>
+    <input type="email" class="form-control" [(ngModel)]="author">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Quote</label>
+    <input type="email" class="form-control" [(ngModel)]="quote">
+  </div>
+ <div class="form-group">
+    <label for="exampleFormControlTextarea1">Quote </label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="quoteDescription"></textarea>
+   <div class="form-group">
+    <label for="exampleInputEmail1">Date</label>
+    <input type="email" class="form-control" [(ngModel)]="date">
+  </div>
+  <button type="submit" (click)="clickSubmit()" class="btn btn-primary">Submit</button>
+
+
+</div>
