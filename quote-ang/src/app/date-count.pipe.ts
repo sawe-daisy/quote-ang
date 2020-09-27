@@ -12,6 +12,11 @@ export class DateCountPipe implements PipeTransform {
     const secondsInDay = 86400; //60 seconds * 60 minutes in an hour * 24 hours in a day
     var dateDifferenceSeconds = dateDifference * 0.001; //converts miliseconds to seconds
     var dateCounter = dateDifferenceSeconds / secondsInDay;
-  }
 
+    if (dateCounter >= 1 && value > todayWithNoTime) {
+      return 30 - dateCounter;
+    } else {
+      return 0;
+    }
+  }
 }
