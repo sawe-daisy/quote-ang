@@ -12,6 +12,7 @@ export class FormComponent implements OnInit {
   quote: string;
   quoteDescription: string;
   newQuote: any;
+  date: Date;
   @Output() emitNewQuote = new EventEmitter();
 
   constructor() { }
@@ -19,7 +20,7 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
   }
   clickSubmit() {
-    this.newQuote = new Quote(this.person, this.author, this.quote, this.quoteDescription);
+    this.newQuote = new Quote(this.person, this.author, this.quote, this.quoteDescription, this.date);
     this.person = '';
     this.author = '';
     this.quote = '';
