@@ -23,10 +23,10 @@ export class QuoteComponent implements OnInit {
 
   ngOnInit(): void{
   }
-  thumbUp(i){
+  thumbup(i){
     this.quotes[i].thumbup++;
   }
-  thumbDown(i){
+  thumbdown(i){
     this.quotes[i].thumbdown++;
   }
   deleteVote(i) {
