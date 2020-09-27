@@ -16,7 +16,8 @@ export class QuoteComponent implements OnInit {
     new Quote('Mae West', 'dee', 'M.W', 'You only live once, but if you do it right, once is enough.', new Date(2020, 3, 1)),
     new Quote('Mahatma Gandhi', 'dee',  'M.G', 'Be the change that you wish to see in the world.', new Date(2020, 2, 1)),
   ];
-
+  num1: number;
+  num2: number;
   i: number;
   constructor() { }
 
