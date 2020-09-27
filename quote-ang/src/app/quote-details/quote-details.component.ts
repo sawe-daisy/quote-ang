@@ -9,6 +9,7 @@ import { Quote } from '../quote';
 export class QuoteDetailsComponent implements OnInit {
 @Input() quote: Quote;
 thumbup = 0;
+thumbdown = 0;
 
 
   constructor() { }
