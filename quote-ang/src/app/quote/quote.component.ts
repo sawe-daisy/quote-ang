@@ -9,12 +9,12 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
   title = 'available quotes';
   quotes = [
-    new Quote('Albert Einstein', 'dee', 'A.B', 'Two things are infinite: the universe and human stupidity; and I am not sure about the universe.'),
-    new Quote('Oscar Wilde', 'dee', 'O.W', 'Be yourself; everyone else is already taken.'),
-    new Quote('Frank Zappa',  'dee',  'F.Z', 'So many books, so little time.'),
-    new Quote('Marcus Cicero', 'dee', 'M.C', 'A room without books is like a body without a soul.'),
-    new Quote('Mae West', 'dee', 'M.W', 'You only live once, but if you do it right, once is enough.'),
-    new Quote('Mahatma Gandhi', 'dee',  'M.G', 'Be the change that you wish to see in the world.'),
+    new Quote('Albert Einstein', 'dee', 'A.B', 'Two things are infinite: the universe and human stupidity; and I am not sure about the universe.', new Date(2019, 9, 21)),
+    new Quote('Oscar Wilde', 'dee', 'O.W', 'Be yourself; everyone else is already taken.', new Date(2020, 1, 1)),
+    new Quote('Frank Zappa',  'dee',  'F.Z', 'So many books, so little time.', new Date(2020, 1, 1)),
+    new Quote('Marcus Cicero', 'dee', 'M.C', 'A room without books is like a body without a soul.', new Date(2020, 4, 1)),
+    new Quote('Mae West', 'dee', 'M.W', 'You only live once, but if you do it right, once is enough.', new Date(2020, 3, 1)),
+    new Quote('Mahatma Gandhi', 'dee',  'M.G', 'Be the change that you wish to see in the world.', new Date(2020, 2, 1)),
   ];
 
   i: number;
@@ -23,10 +23,10 @@ export class QuoteComponent implements OnInit {
   ngOnInit(): void{
   }
   thumbUp(i){
-    this.quotes[i].thumbUp++;
+    this.quotes[i].thumbup++;
   }
   thumbDown(i){
-    this.quotes[i].thumbDown++;
+    this.quotes[i].thumbdown++;
   }
   deleteVote(i) {
     this.quotes.splice(i, 1);
