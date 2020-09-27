@@ -1,8 +1,8 @@
 export class Quote {
-  public thumbUp: number;
-  public thumbDown: number;
+  public thumbup: number;
+  public thumbdown: number;
   constructor( public person: string, public author: string, public quote: string, public quoteDescription: string ){
-    this.thumbUp = 0;
-    this.thumbDown = 0;
+    this.thumbup = 0;
+    this.thumbdown = 0;
   }
 }
