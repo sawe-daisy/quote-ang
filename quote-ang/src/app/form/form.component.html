@@ -12,11 +12,11 @@
     <input type="email" class="form-control" [(ngModel)]="quote">
   </div>
  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Quote </label>
+    <label for="exampleFormControlTextarea1">Quote Description </label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="quoteDescription"></textarea>
    <div class="form-group">
     <label for="exampleInputEmail1">Date</label>
-    <input type="email" class="form-control" [(ngModel)]="date">
+    <input type="date" class="form-control" [(ngModel)]="date">
   </div>
   <button type="submit" (click)="clickSubmit()" class="btn btn-primary">Submit</button>
 

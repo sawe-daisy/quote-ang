@@ -35,15 +35,4 @@ export class QuoteComponent implements OnInit {
   addQuote(newQuote){
     this.quotes.push(newQuote);
   }
-  highVotes() {
-    this.num1 = 0;
-    this.num2 = 0;
-    for (this.i = 0; this.i < this.quotes.length; this.i++){
-    this.num2 = this.quotes[this.i].thumbup;
-    if (this.num2 > this.num1) {
-    this.num1 = this.num2;
-    }
-    return this.num1;
-    }
-  }
 }
