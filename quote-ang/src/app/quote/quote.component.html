@@ -3,9 +3,9 @@
     <app-form (emitNewQuote)="addQuote($event)"></app-form>
   </div>
   <div class="col-md-8">
-    <div class="container-fluid p-5">
+    <div class="container-fluid p-2">
       <div class="row">
-        <div class="col-md-6 mt-3" *ngFor="let quote of quotes; let i=index">
+        <div class="col-md-4 mt-2" *ngFor="let quote of quotes; let i=index">
           <div class="card card-cascade">
             <app-quote-details [quote]="quote"></app-quote-details>
             <div class="card-footer text-muted text-center">
